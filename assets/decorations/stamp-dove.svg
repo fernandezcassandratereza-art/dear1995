@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" aria-label="PAR AVION postage stamp">
+  <defs><mask id="p"><rect width="100" height="120" fill="#fff"/>
+  <circle cx="5" cy="0" r="3.6"/><circle cx="5" cy="120" r="3.6"/>
+<circle cx="15" cy="0" r="3.6"/><circle cx="15" cy="120" r="3.6"/>
+<circle cx="25" cy="0" r="3.6"/><circle cx="25" cy="120" r="3.6"/>
+<circle cx="35" cy="0" r="3.6"/><circle cx="35" cy="120" r="3.6"/>
+<circle cx="45" cy="0" r="3.6"/><circle cx="45" cy="120" r="3.6"/>
+<circle cx="55" cy="0" r="3.6"/><circle cx="55" cy="120" r="3.6"/>
+<circle cx="65" cy="0" r="3.6"/><circle cx="65" cy="120" r="3.6"/>
+<circle cx="75" cy="0" r="3.6"/><circle cx="75" cy="120" r="3.6"/>
+<circle cx="85" cy="0" r="3.6"/><circle cx="85" cy="120" r="3.6"/>
+<circle cx="95" cy="0" r="3.6"/><circle cx="95" cy="120" r="3.6"/>
+  <circle cx="0" cy="5" r="3.6"/><circle cx="100" cy="5" r="3.6"/>
+<circle cx="0" cy="15" r="3.6"/><circle cx="100" cy="15" r="3.6"/>
+<circle cx="0" cy="25" r="3.6"/><circle cx="100" cy="25" r="3.6"/>
+<circle cx="0" cy="35" r="3.6"/><circle cx="100" cy="35" r="3.6"/>
+<circle cx="0" cy="45" r="3.6"/><circle cx="100" cy="45" r="3.6"/>
+<circle cx="0" cy="55" r="3.6"/><circle cx="100" cy="55" r="3.6"/>
+<circle cx="0" cy="65" r="3.6"/><circle cx="100" cy="65" r="3.6"/>
+<circle cx="0" cy="75" r="3.6"/><circle cx="100" cy="75" r="3.6"/>
+<circle cx="0" cy="85" r="3.6"/><circle cx="100" cy="85" r="3.6"/>
+<circle cx="0" cy="95" r="3.6"/><circle cx="100" cy="95" r="3.6"/>
+<circle cx="0" cy="105" r="3.6"/><circle cx="100" cy="105" r="3.6"/>
+<circle cx="0" cy="115" r="3.6"/><circle cx="100" cy="115" r="3.6"/>
+  </mask></defs>
+  <g mask="url(#p)"><rect width="100" height="120" fill="#f4ead6"/></g>
+  <rect x="9" y="9" width="82" height="102" fill="#8a9a86"/>
+  <rect x="12" y="12" width="76" height="96" fill="none" stroke="#f4ead6" stroke-opacity=".6" stroke-width="1"/>
+  <g transform="translate(50 56)" fill="#f4ead6"><path d="M-22 4c10-2 18-10 24-20 2 8 0 14-4 18 8-2 16 0 22 6-10 0-16 4-22 6-8 2-16-2-20-10z"/><path d="M14-6c3-3 7-3 9 0l-4 2z" fill="#c9a96e"/><rect x="-6" y="14" width="22" height="13" fill="#c9a96e" transform="rotate(-8)"/><path d="M-6 15l11 7 11-9" stroke="#8a9a86" stroke-width="1.5" fill="none" transform="rotate(-8)"/></g>
+  <text x="50" y="102" text-anchor="middle" font-family="Special Elite, Courier, monospace" font-size="9" fill="#f4ead6" letter-spacing="1">PAR AVION</text>
+  <text x="80" y="24" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-weight="600" fill="#f4ead6">8</text>
+</svg>

@@ -1,0 +1,6 @@
+# Minimal Supabase CLI config for DEAR, 1995.
+# The publishing function is called without a user login, so JWT checking is
+# turned off for it. Security comes from the function's own validation,
+# rate limiting and the database rules in database/schema.sql.
+[functions.publish-letter]
+verify_jwt = false

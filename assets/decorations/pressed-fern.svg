@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 240" aria-label="Pressed fern">
+  <g fill="#7d7f52" opacity=".85">
+    <path d="M60 235C58 170 62 90 60 8" stroke="#5d5d3a" stroke-width="2" fill="none"/>
+    <g id="l">
+      <path d="M60 200c-20-2-34-10-40-20 16-2 30 6 40 20z"/><path d="M60 200c20-2 34-10 40-20-16-2-30 6-40 20z"/>
+    </g>
+    <use href="#l" transform="translate(0 -30) scale(1 1)"/>
+    <use href="#l" transform="translate(6 -55) scale(.9)"/>
+    <use href="#l" transform="translate(12 -80) scale(.8)"/>
+    <use href="#l" transform="translate(18 -100) scale(.7)"/>
+    <use href="#l" transform="translate(24 -116) scale(.6)"/>
+    <use href="#l" transform="translate(30 -128) scale(.5)"/>
+    <use href="#l" transform="translate(36 -137) scale(.4)"/>
+  </g>
+</svg>

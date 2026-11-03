@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" aria-label="PILIPINAS postage stamp">
+  <defs><mask id="p"><rect width="100" height="120" fill="#fff"/>
+  <circle cx="5" cy="0" r="3.6"/><circle cx="5" cy="120" r="3.6"/>
+<circle cx="15" cy="0" r="3.6"/><circle cx="15" cy="120" r="3.6"/>
+<circle cx="25" cy="0" r="3.6"/><circle cx="25" cy="120" r="3.6"/>
+<circle cx="35" cy="0" r="3.6"/><circle cx="35" cy="120" r="3.6"/>
+<circle cx="45" cy="0" r="3.6"/><circle cx="45" cy="120" r="3.6"/>
+<circle cx="55" cy="0" r="3.6"/><circle cx="55" cy="120" r="3.6"/>
+<circle cx="65" cy="0" r="3.6"/><circle cx="65" cy="120" r="3.6"/>
+<circle cx="75" cy="0" r="3.6"/><circle cx="75" cy="120" r="3.6"/>
+<circle cx="85" cy="0" r="3.6"/><circle cx="85" cy="120" r="3.6"/>
+<circle cx="95" cy="0" r="3.6"/><circle cx="95" cy="120" r="3.6"/>
+  <circle cx="0" cy="5" r="3.6"/><circle cx="100" cy="5" r="3.6"/>
+<circle cx="0" cy="15" r="3.6"/><circle cx="100" cy="15" r="3.6"/>
+<circle cx="0" cy="25" r="3.6"/><circle cx="100" cy="25" r="3.6"/>
+<circle cx="0" cy="35" r="3.6"/><circle cx="100" cy="35" r="3.6"/>
+<circle cx="0" cy="45" r="3.6"/><circle cx="100" cy="45" r="3.6"/>
+<circle cx="0" cy="55" r="3.6"/><circle cx="100" cy="55" r="3.6"/>
+<circle cx="0" cy="65" r="3.6"/><circle cx="100" cy="65" r="3.6"/>
+<circle cx="0" cy="75" r="3.6"/><circle cx="100" cy="75" r="3.6"/>
+<circle cx="0" cy="85" r="3.6"/><circle cx="100" cy="85" r="3.6"/>
+<circle cx="0" cy="95" r="3.6"/><circle cx="100" cy="95" r="3.6"/>
+<circle cx="0" cy="105" r="3.6"/><circle cx="100" cy="105" r="3.6"/>
+<circle cx="0" cy="115" r="3.6"/><circle cx="100" cy="115" r="3.6"/>
+  </mask></defs>
+  <g mask="url(#p)"><rect width="100" height="120" fill="#f4ead6"/></g>
+  <rect x="9" y="9" width="82" height="102" fill="#b5727a"/>
+  <rect x="12" y="12" width="76" height="96" fill="none" stroke="#f4ead6" stroke-opacity=".6" stroke-width="1"/>
+  <g transform="translate(50 56)"><circle r="13" fill="#7a2632"/><path d="M-6-4c4-6 10-4 9 2s-9 7-12 2 3-11 10-10" stroke="#e8b9bd" stroke-width="2" fill="none"/><path d="M0 13v22M0 24c-8-2-12-8-12-8M0 28c7-2 11-7 11-7" stroke="#4f5b3a" stroke-width="2.4" fill="none" stroke-linecap="round"/></g>
+  <text x="50" y="102" text-anchor="middle" font-family="Special Elite, Courier, monospace" font-size="9" fill="#f4ead6" letter-spacing="1">PILIPINAS</text>
+  <text x="80" y="24" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-weight="600" fill="#f4ead6">₱5</text>
+</svg>

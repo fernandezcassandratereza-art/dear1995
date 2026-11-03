@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Write a letter — DEAR, 1995</title>
+  <meta name="description" content="Write a personal digital letter with photos and music. No login, no registration.">
+  <meta name="theme-color" content="#efe2c8">
+  <link rel="icon" href="assets/decorations/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/creator.css">
+  <link rel="stylesheet" href="css/letter.css">
+</head>
+<body class="page-creator">
+
+  <header class="topbar topbar--creator">
+    <a class="logo" href="index.html" aria-label="DEAR, 1995 home">DEAR, <span>1995</span></a>
+    <div class="topbar__right">
+      <span class="save-state" id="save-state" aria-live="polite">Not saved yet</span>
+      <button class="btn btn--small btn--ghost" type="button" id="btn-save-top">Save draft</button>
+    </div>
+  </header>
+
+  <nav class="steps" aria-label="Letter steps">
+    <ol class="steps__list" id="steps-list">
+      <li><button type="button" data-goto="1"><span>1</span><em>Details</em></button></li>
+      <li><button type="button" data-goto="2"><span>2</span><em>Write</em></button></li>
+      <li><button type="button" data-goto="3"><span>3</span><em>Photos</em></button></li>
+      <li><button type="button" data-goto="4"><span>4</span><em>Music</em></button></li>
+      <li><button type="button" data-goto="5"><span>5</span><em>Theme</em></button></li>
+      <li><button type="button" data-goto="6"><span>6</span><em>Surprise</em></button></li>
+      <li><button type="button" data-goto="7"><span>7</span><em>Preview</em></button></li>
+    </ol>
+    <div class="steps__bar"><span id="steps-bar"></span></div>
+  </nav>
+
+  <main class="creator" id="creator">
+
+    <!-- STEP 1 -->
+    <section class="step is-active" data-step="1" aria-labelledby="s1-title">
+      <header class="step__head">
+        <p class="step__kicker">Step 1 of 7</p>
+        <h1 id="s1-title" class="step__title">Who is this letter for?</h1>
+        <p class="step__lead">Start with the little details. You can write in Filipino, English, Bisaya, or any language you like.</p>
+      </header>
+      <div class="card card--paper">
+        <div class="field-row">
+          <label class="field">
+            <span class="field__label">Recipient's name <b>*</b></span>
+            <input type="text" data-bind="recipient" maxlength="60" placeholder="e.g. Mika" autocomplete="off">
+          </label>
+          <label class="field">
+            <span class="field__label">Your name</span>
+            <input type="text" data-bind="sender" maxlength="60" placeholder="e.g. Jun" autocomplete="off">
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label">Letter title</span>
+          <input type="text" data-bind="title" maxlength="120" placeholder="e.g. For the girl who loves sunsets">
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span class="field__label">Date</span>
+            <input type="text" data-bind="date" maxlength="60" placeholder="e.g. November 3, 2026">
+          </label>
+          <label class="field">
+            <span class="field__label">Greeting</span>
+            <input type="text" data-bind="greeting" maxlength="120" placeholder="e.g. Dear Mika, / Mahal kong Mika,">
+          </label>
+        </div>
+        <p class="field__help">Leave the greeting empty and we'll write "Dear [name]," for you.</p>
+      </div>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="step" data-step="2" aria-labelledby="s2-title">
+      <header class="step__head">
+        <p class="step__kicker">Step 2 of 7</p>
+        <h1 id="s2-title" class="step__title">Write your letter</h1>
+        <p class="step__lead">Say it the way only you can. Leave an empty line between paragraphs.</p>
+      </header>
+
+      <div class="toolbar" role="toolbar" aria-label="Text style">
+        <label class="toolbar__item">
+          <span class="sr-only">Font</span>
+          <select data-bind="style.font" class="font-select" aria-label="Font"></select>
+        </label>
+        <label class="toolbar__item toolbar__size">
+          <span aria-hidden="true" class="size-small">A</span>
+          <input type="range" min="14" max="32" step="1" data-bind="style.size" aria-label="Text size">
+          <span aria-hidden="true" class="size-big">A</span>
+        </label>
+        <div class="toolbar__item seg" role="group" aria-label="Alignment">
+          <button type="button" data-align="left" aria-label="Align left"><svg viewBox="0 0 20 20"><path d="M3 5h14M3 9h9M3 13h14M3 17h9"/></svg></button>
+          <button type="button" data-align="center" aria-label="Align center"><svg viewBox="0 0 20 20"><path d="M3 5h14M5.5 9h9M3 13h14M5.5 17h9"/></svg></button>
+          <button type="button" data-align="right" aria-label="Align right"><svg viewBox="0 0 20 20"><path d="M3 5h14M8 9h9M3 13h14M8 17h9"/></svg></button>
+          <button type="button" data-align="justify" aria-label="Justify"><svg viewBox="0 0 20 20"><path d="M3 5h14M3 9h14M3 13h14M3 17h14"/></svg></button>
+        </div>
+      </div>
+
+      <div class="write-paper" id="write-paper">
+        <p class="write-paper__greeting" id="write-greeting">Dear you,</p>
+        <label class="sr-only" for="body-input">Your letter</label>
+        <textarea id="body-input" data-bind="body" maxlength="12000" rows="12" placeholder="Start writing here…
+
+Every paragraph you start after an empty line will appear as its own paragraph in the letter."></textarea>
+        <div class="write-paper__meta"><span id="body-count">0 paragraphs · 0 / 12000</span></div>
+        <label class="field field--inline">
+          <span class="field__label">Closing line</span>
+          <input type="text" data-bind="closing" maxlength="160" placeholder="e.g. With all my love, / Nagmamahal,">
+        </label>
+      </div>
+
+      <div class="card card--paper">
+        <label class="field">
+          <span class="field__label">Final message (last page)</span>
+          <textarea data-bind="finalMessage" maxlength="2000" rows="4" placeholder="The last thing you want them to read. e.g. Thank you for every ordinary day that felt like magic."></textarea>
+        </label>
+      </div>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="step" data-step="3" aria-labelledby="s3-title">
+      <header class="step__head">
+        <p class="step__kicker">Step 3 of 7</p>
+        <h1 id="s3-title" class="step__title">Add your photos</h1>
+        <p class="step__lead">Pick from your gallery. JPG, JPEG, PNG or WebP · up to 12 photos. They're resized on your phone so they upload fast.</p>
+      </header>
+
+      <label class="dropzone" id="dropzone">
+        <input type="file" id="photo-input" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" multiple>
+        <span class="dropzone__polaroids" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="dropzone__title">Choose photos</span>
+        <span class="dropzone__sub">Tap to open your gallery · or drop files here</span>
+      </label>
+      <p class="photo-count" id="photo-count">0 / 12 photos</p>
+      <ol class="photo-list" id="photo-list" aria-label="Your photos"></ol>
+      <input type="file" id="photo-replace" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" hidden>
+    </section>
+
+    <!-- STEP 4 -->
+    <section class="step" data-step="4" aria-labelledby="s4-title">
+      <header class="step__head">
+        <p class="step__kicker">Step 4 of 7</p>
+        <h1 id="s4-title" class="step__title">Choose your song</h1>
+        <p class="step__lead">Add an MP3 from your phone (up to 15 MB). It starts playing when they open the envelope.</p>
+      </header>
+
+      <div class="music-empty" id="music-empty">
+        <img src="assets/decorations/cassette.svg" alt="" class="music-empty__tape">
+        <label class="btn btn--primary btn--file">
+          <input type="file" id="music-input" accept="audio/mpeg,audio/mp3,.mp3">
+          Select an MP3
+        </label>
+        <button type="button" class="btn btn--ghost" id="music-sample">Use the sample song</button>
+        <p class="field__help">Sample: "Sunday Morning Waltz", an original music-box tune included with DEAR, 1995.</p>
+      </div>
+
+      <div class="music-card card card--paper" id="music-card" hidden>
+        <div class="music-deck" id="music-deck"></div>
+        <label class="field">
+          <span class="field__label">Song title (written on the cassette)</span>
+          <input type="text" data-bind="music.title" maxlength="90" placeholder="e.g. Our song — Sunday Morning Waltz">
+        </label>
+        <div class="music-controls">
+          <button type="button" class="round-btn" id="music-play" aria-label="Play preview"><span class="dl-play-icon"></span></button>
+          <div class="music-seek">
+            <input type="range" id="music-seek" min="0" max="1000" value="0" aria-label="Song position">
+            <div class="music-times"><span id="music-cur">0:00</span><span id="music-dur">0:00</span></div>
+          </div>
+        </div>
+        <label class="music-vol"><span>Volume</span><input type="range" id="music-vol" min="0" max="100" value="80"></label>
+        <p class="music-file" id="music-file"></p>
+        <div class="music-actions">
+          <label class="btn btn--small btn--ghost btn--file">
+            <input type="file" id="music-change" accept="audio/mpeg,audio/mp3,.mp3">
+            Change song
+          </label>
+          <button type="button" class="btn btn--small btn--ghost" id="music-remove">Remove</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 5 -->
+    <section class="step" data-step="5" aria-labelledby="s5-title">
+      <header class="step__head">
+        <p class="step__kicker">Step 5 of 7</p>
+        <h1 id="s5-title" class="step__title">Pick a theme</h1>
+        <p class="step__lead">Choose a mood, then make it yours.</p>
+      </header>
+      <div class="themes" id="theme-list" role="radiogroup" aria-label="Themes"></div>
+
+      <div class="card card--paper custom">
+        <h2 class="card__title">Customize</h2>
+        <div class="custom__group">
+          <span class="field__label">Accent color</span>
+          <div class="swatches" id="accent-swatches"></div>
+        </div>
+        <div class="custom__group">
+          <span class="field__label">Ink color</span>
+          <div class="swatches" id="ink-swatches"></div>
+        </div>
+        <label class="field">
+          <span class="field__label">Font</span>
+          <select data-bind="style.font" class="font-select"></select>
+        </label>
+        <div class="custom__group">
+          <span class="field__label">Paper texture</span>
+          <div class="chips" id="paper-chips"></div>
+        </div>
+        <div class="custom__group">
+          <span class="field__label">Photo layout</span>
+          <div class="chips" id="layout-chips"></div>
+        </div>
+        <div class="custom__group">
+          <span class="field__label">Decorations</span>
+          <div class="toggles">
+            <label class="toggle"><input type="checkbox" data-bind="style.deco.flowers"><span>Pressed flowers</span></label>
+            <label class="toggle"><input type="checkbox" data-bind="style.deco.stamps"><span>Postage stamps</span></label>
+            <label class="toggle"><input type="checkbox" data-bind="style.deco.tape"><span>Washi tape</span></label>
+            <label class="toggle"><input type="checkbox" data-bind="style.deco.airmail"><span>Airmail border</span></label>
+            <label class="toggle"><input type="checkbox" data-bind="style.deco.grain"><span>Film grain</span></label>
+          </div>
+        </div>
+        <button type="button" class="btn btn--small btn--ghost" id="theme-reset">Reset to theme defaults</button>
+      </div>
+    </section>
+
+    <!-- STEP 6 -->
+    <section class="step" data-step="6" aria-labelledby="s6-title">
+      <header class="step__head">
+        <p class="step__kicker">Step 6 of 7</p>
+        <h1 id="s6-title" class="step__title">Hide a little surprise</h1>
+        <p class="step__lead">All optional. These stay hidden until they tap to find them.</p>
+      </header>
+
+      <div class="card card--paper">
+        <h2 class="card__title">Secret message</h2>
+        <p class="field__help">Sealed in a tiny envelope on the last page.</p>
+        <textarea data-bind="surprise.secret" maxlength="1000" rows="3" aria-label="Secret message" placeholder="e.g. I kept the ticket from our first movie. It's in my wallet."></textarea>
+      </div>
+
+      <div class="card card--paper">
+        <h2 class="card__title">Hidden notes</h2>
+        <p class="field__help">Up to three folded notes tucked around your letter.</p>
+        <input type="text" data-bind="surprise.notes.0" maxlength="300" aria-label="Hidden note 1" placeholder="Note 1 — e.g. Look up. I'm probably smiling at you.">
+        <input type="text" data-bind="surprise.notes.1" maxlength="300" aria-label="Hidden note 2" placeholder="Note 2">
+        <input type="text" data-bind="surprise.notes.2" maxlength="300" aria-label="Hidden note 3" placeholder="Note 3">
+      </div>
+
+      <div class="card card--paper">
+        <h2 class="card__title">Clickable stamps</h2>
+        <p class="field__help">Choose stamps for your letter. Each can whisper a message when tapped.</p>
+        <div class="stamp-pick" id="stamp-pick"></div>
+      </div>
+
+      <div class="card card--paper">
+        <h2 class="card__title">Surprise closing</h2>
+        <p class="field__help">Revealed with falling petals after "One more thing…" on the last page.</p>
+        <textarea data-bind="surprise.surpriseClosing" maxlength="1000" rows="3" aria-label="Surprise closing" placeholder="e.g. P.S. Check your bag. There's something there for you."></textarea>
+      </div>
+    </section>
+
+    <!-- STEP 7 -->
+    <section class="step step--preview" data-step="7" aria-labelledby="s7-title">
+      <header class="step__head">
+        <p class="step__kicker">Step 7 of 7</p>
+        <h1 id="s7-title" class="step__title">Live preview</h1>
+        <p class="step__lead">This is exactly what they'll see. Tap through it like they would.</p>
+      </header>
+      <div class="notice" id="demo-notice" hidden>
+        <strong>Demo mode.</strong> Supabase isn't connected yet, so published links will only open on this device. See README sections 4 and 5 to go live.
+      </div>
+      <div class="phone">
+        <div class="phone__screen" id="preview-frame"></div>
+      </div>
+      <div class="preview-actions">
+        <button type="button" class="btn btn--ghost" id="btn-edit">Edit letter</button>
+        <button type="button" class="btn btn--ghost" id="btn-save">Save draft</button>
+        <button type="button" class="btn btn--primary btn--big" id="btn-publish">Publish letter</button>
+      </div>
+      <p class="fineprint">Drafts are saved only in this browser on this device and may disappear if you clear your browser data. Published letters are stored online.</p>
+    </section>
+  </main>
+
+  <footer class="stepnav" id="stepnav">
+    <button type="button" class="btn btn--ghost" id="btn-back">Back</button>
+    <span class="stepnav__count" id="step-count">1 / 7</span>
+    <button type="button" class="btn btn--primary" id="btn-next">Next</button>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/vendor/qrcode.js"></script>
+  <script src="js/uploader.js"></script>
+  <script src="js/preview.js"></script>
+  <script src="js/publisher.js"></script>
+  <script src="js/creator.js"></script>
+</body>
+</html>

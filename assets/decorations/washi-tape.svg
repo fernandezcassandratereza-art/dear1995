@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" preserveAspectRatio="none" aria-label="Washi tape">
+  <defs><pattern id="s" width="12" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(20)"><rect width="6" height="40" fill="#ffffff" fill-opacity=".22"/></pattern></defs>
+  <path d="M4 3l6 3 6-3 6 3 6-3 6 3 6-3 6 3 6-3 6 3 6-3 6 3 6-3 6 3 6-3 6 3 6-3 6 3 6-3 6 3 6-3 6 3 4-2v34l-6-3-6 3-6-3-6 3-6-3-6 3-6-3-6 3-6-3-6 3-6-3-6 3-6-3-6 3-6-3-6 3-6-3-6 3-6-3-6 3-6-3-6 3-4-2z" fill="#d6a6a8" fill-opacity=".78"/>
+  <rect width="140" height="40" fill="url(#s)"/>
+</svg>

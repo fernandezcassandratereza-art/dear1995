@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" aria-label="SINCE 1995 postage stamp">
+  <defs><mask id="p"><rect width="100" height="120" fill="#fff"/>
+  <circle cx="5" cy="0" r="3.6"/><circle cx="5" cy="120" r="3.6"/>
+<circle cx="15" cy="0" r="3.6"/><circle cx="15" cy="120" r="3.6"/>
+<circle cx="25" cy="0" r="3.6"/><circle cx="25" cy="120" r="3.6"/>
+<circle cx="35" cy="0" r="3.6"/><circle cx="35" cy="120" r="3.6"/>
+<circle cx="45" cy="0" r="3.6"/><circle cx="45" cy="120" r="3.6"/>
+<circle cx="55" cy="0" r="3.6"/><circle cx="55" cy="120" r="3.6"/>
+<circle cx="65" cy="0" r="3.6"/><circle cx="65" cy="120" r="3.6"/>
+<circle cx="75" cy="0" r="3.6"/><circle cx="75" cy="120" r="3.6"/>
+<circle cx="85" cy="0" r="3.6"/><circle cx="85" cy="120" r="3.6"/>
+<circle cx="95" cy="0" r="3.6"/><circle cx="95" cy="120" r="3.6"/>
+  <circle cx="0" cy="5" r="3.6"/><circle cx="100" cy="5" r="3.6"/>
+<circle cx="0" cy="15" r="3.6"/><circle cx="100" cy="15" r="3.6"/>
+<circle cx="0" cy="25" r="3.6"/><circle cx="100" cy="25" r="3.6"/>
+<circle cx="0" cy="35" r="3.6"/><circle cx="100" cy="35" r="3.6"/>
+<circle cx="0" cy="45" r="3.6"/><circle cx="100" cy="45" r="3.6"/>
+<circle cx="0" cy="55" r="3.6"/><circle cx="100" cy="55" r="3.6"/>
+<circle cx="0" cy="65" r="3.6"/><circle cx="100" cy="65" r="3.6"/>
+<circle cx="0" cy="75" r="3.6"/><circle cx="100" cy="75" r="3.6"/>
+<circle cx="0" cy="85" r="3.6"/><circle cx="100" cy="85" r="3.6"/>
+<circle cx="0" cy="95" r="3.6"/><circle cx="100" cy="95" r="3.6"/>
+<circle cx="0" cy="105" r="3.6"/><circle cx="100" cy="105" r="3.6"/>
+<circle cx="0" cy="115" r="3.6"/><circle cx="100" cy="115" r="3.6"/>
+  </mask></defs>
+  <g mask="url(#p)"><rect width="100" height="120" fill="#f4ead6"/></g>
+  <rect x="9" y="9" width="82" height="102" fill="#c9a96e"/>
+  <rect x="12" y="12" width="76" height="96" fill="none" stroke="#f4ead6" stroke-opacity=".6" stroke-width="1"/>
+  <g transform="translate(50 56)"><circle r="12" fill="#7a2632"/><g stroke="#7a2632" stroke-width="3" stroke-linecap="round"><line x1="0" y1="-17" x2="0" y2="-25" transform="rotate(0)"/>
+<line x1="0" y1="-17" x2="0" y2="-25" transform="rotate(45)"/>
+<line x1="0" y1="-17" x2="0" y2="-25" transform="rotate(90)"/>
+<line x1="0" y1="-17" x2="0" y2="-25" transform="rotate(135)"/>
+<line x1="0" y1="-17" x2="0" y2="-25" transform="rotate(180)"/>
+<line x1="0" y1="-17" x2="0" y2="-25" transform="rotate(225)"/>
+<line x1="0" y1="-17" x2="0" y2="-25" transform="rotate(270)"/>
+<line x1="0" y1="-17" x2="0" y2="-25" transform="rotate(315)"/></g><path d="M-30 30c10-8 20-8 30 0s20 8 30 0" stroke="#f4ead6" stroke-width="2" fill="none"/></g>
+  <text x="50" y="102" text-anchor="middle" font-family="Special Elite, Courier, monospace" font-size="9" fill="#f4ead6" letter-spacing="1">SINCE 1995</text>
+  <text x="80" y="24" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-weight="600" fill="#f4ead6">20</text>
+</svg>
